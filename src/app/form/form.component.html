@@ -1,0 +1,51 @@
+<h1>Form</h1>
+
+<div [formGroup]="formGroup" class="form">
+    <div class="day">
+        <h2>Monday</h2>
+        
+        <input type="number" formControlName="Monday">
+    </div>
+
+    <div class="day">
+        <h2>Tuesday</h2>
+        
+        <input type="number" formControlName="Tuesday">
+    </div>
+
+    <div class="day">
+        <h2>Wednesday</h2>
+        
+        <input type="number" formControlName="Wednesday">
+    </div>
+
+    <div class="day">
+        <h2>Thursday</h2>
+        
+        <input type="number" formControlName="Thursday">
+    </div>
+
+    <div class="day">
+        <h2>Friday</h2>
+        
+        <input type="number" formControlName="Friday">
+    </div>
+
+    <div class="day">
+        <h2>Saturday</h2>
+        
+        <input type="number" formControlName="Saturday">
+    </div>
+
+    <div class="day">
+        <h2>Sunday</h2>
+        
+        <input type="number" formControlName="Sunday">
+    </div>
+</div>
+
+<div>
+    <p>
+        {{ formGroup.value | json }}
+    </p>
+</div>
