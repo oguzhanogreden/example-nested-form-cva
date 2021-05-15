@@ -1,0 +1,12 @@
+<div [formGroup]="formGroup">
+    <h2>{{ DayOfWeek }}</h2>
+    <p>
+        Is FormDayComponent valid? {{timePeriods.valid}}
+    </p>
+    
+    <ng-container *ngFor="let period of timePeriods.controls; let i = index" formArrayName="timePeriods">
+        <app-form-period  [formControlName]=i></app-form-period>
+    </ng-container>
+    
+    <button (click)="onAddNew()">Add new time period</button>    
+</div>
